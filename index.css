@@ -1,4 +1,3 @@
-
 /*.footer-container {
     width: 1920px;
     height: 533px; 
@@ -18,7 +17,16 @@
 .header-section{
     background-color:#14202E;
     background-size: cover;
+  
+    position: relative;
+}
 
+.header-section{
+    position: absolute;
+    top:0;
+    position:sticky;
+    z-index: 1; 
+   
 }
 .isf-heading{
     text-decoration:none;
@@ -347,10 +355,16 @@
     padding:15px 30px;
     border:1px solid #8695A8;
 }
-
+.icon {
+    transition: all 0.4s linear;
+}
+.icon:hover {
+    transform: rotateX(360deg);
+}
 .icons-container a{
     font-size:32px;
     text-decoration:none;
+    transition:1s linear;
 }
 .icons-container a + a{
     margin-left:15px;
@@ -360,6 +374,9 @@
     color:grey; 
     text-decoration: none; 
     list-style-type: none;
+} 
+.icon-arrow-up-circle:hover{
+    transform: rotateX(360deg);
 }
 .copyright-border-line{
     border-top:1px solid #8695A8;
